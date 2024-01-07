@@ -4,7 +4,12 @@ import { AiFillDelete } from "react-icons/ai";
 import { CartState } from "../context/Context";
 import Rating from "./Rating";
 
+
+
+
 const Cart = () => {
+
+
   const {
     state: { cart },
     dispatch,
@@ -15,7 +20,14 @@ const Cart = () => {
     setTotal(
       cart.reduce((acc, curr) => acc + Number(curr.price) * curr.qty, 0)
     );
+
+
   }, [cart]);
+
+
+
+
+
 
   return (
     <div className="home">
@@ -30,7 +42,7 @@ const Cart = () => {
                 <Col md={2}>
                   <span>{prod.name}</span>
                 </Col>
-                <Col md={2}>₹ {prod.price}</Col>
+                <Col md={2}>£ {prod.price}</Col>
                 <Col md={2}>
                   <Rating rating={prod.ratings} />
                 </Col>

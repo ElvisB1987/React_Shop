@@ -13,6 +13,7 @@
   align-items: center;
   margin: 0 20px;
   margin-bottom: 20px;
+  overflow-y: hidden;
 }
 
 .cartItemImg {
@@ -72,12 +73,20 @@
 }
 
 /* Media Queries */
+
+@media (max-width: 1612px) {
+  .dropdown-menu{
+    left: -250px;
+  }
+}
 @media (max-width: 771px) {
   .filters {
     width: 40%;
     padding: 10px;
     margin: 5px;
   }
+
+ 
 
   .filters > span {
     font-size: 10px;

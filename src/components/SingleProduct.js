@@ -41,7 +41,9 @@ const SingleProduct = ({ prod }) => {
                 dispatch({
                   type: "ADD_TO_CART",
                   payload: prod,
+                  
                 })
+                
               }
               disabled={!prod.inStock}
             >

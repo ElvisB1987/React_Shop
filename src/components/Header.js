@@ -44,13 +44,13 @@ const Header = () => {
           </Navbar.Text>
         )}
         <Nav>
-          <Dropdown alignRight>
-            <Dropdown.Toggle variant="success">
+          <Dropdown align="end">
+            <Dropdown.Toggle variant="secondary btn-sm" id="dropdown-end">
               <FaShoppingCart color="white" fontSize="25px" />
               <Badge>{cart.length}</Badge>
             </Dropdown.Toggle>
 
-            <Dropdown.Menu style={{ minWidth: 370 }}>
+            <Dropdown.Menu align="dropdown-menu-start" style={{ minWidth: 330 }}>
               {cart.length > 0 ? (
                 <>
                   {cart.map((prod) => (
@@ -62,7 +62,7 @@ const Header = () => {
                       />
                       <div className="cartItemDetail">
                         <span>{prod.name}</span>
-                        <span>₹ {prod.price.split(".")[0]}</span>
+                        <span>£ {prod.price.split(".")[0]}</span>
                       </div>
                       <AiFillDelete
                         fontSize="20px"
@@ -89,7 +89,7 @@ const Header = () => {
           </Dropdown>
         </Nav>
       </Container>
-    </Navbar>
+    </Navbar >
   );
 };
 
