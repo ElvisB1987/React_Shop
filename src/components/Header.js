@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { FaShoppingCart } from "react-icons/fa";
 import { AiFillDelete } from "react-icons/ai";
 import {

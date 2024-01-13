@@ -2,6 +2,7 @@ import { CartState } from "../context/Context";
 import Filters from "./Filters";
 import SingleProduct from "./SingleProduct";
 
+
 const Home = () => {
   const {
     state: { products },

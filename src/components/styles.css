@@ -63,6 +63,14 @@
   justify-content: space-around;
 }
 
+.visible {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
 .products {
   width: 30%;
   margin: 10px;
